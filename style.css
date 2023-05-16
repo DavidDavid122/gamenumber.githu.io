@@ -1,0 +1,84 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(82, 72, 72);
+}
+
+.wrapper {
+    background: #fff;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.wrapper header {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.wrapper p {
+    color: #333;
+}
+
+.wrapper .input-field {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.wrapper .input-field input,
+.wrapper .input-field button {
+    width: calc(100% / 2 - 20px);
+    height: 50px;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 0 20px;
+    outline: none;
+}
+
+.wrapper .input-field input {
+    width: 120px;
+    color: #707070;
+    text-align: center;
+    border: 1px solid #aaa;
+}
+
+.wrapper .input-field input:disabled {
+    cursor: pointer;
+}
+
+.wrapper .input-field button {
+    color: #ffffff;
+    background: rgb(13, 13, 158);
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.wrapper .input-field button:hover {
+    background: rgb(107, 107, 221);
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    display: none;
+}
+
+.wrapper .input-field button:active {
+    transform: scale(0.97);
+}
